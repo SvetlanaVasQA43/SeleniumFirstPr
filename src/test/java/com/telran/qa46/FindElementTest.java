@@ -50,15 +50,15 @@ public class FindElementTest {
         //by classname
         driver.findElement(By.className("mobile-header"));
         //by linkText
-       // WebElement a2 = driver.findElement(By.linkText(" Let the car work "));
-       // System.out.println(a2.getText());
+        WebElement a2 = driver.findElement(By.linkText("Let the car work"));
+        System.out.println(a2.getText());
         driver.findElement(By.partialLinkText("car"));
     }
 
     @Test
     public void findElementByCssSelectorTest(){
         //tagName==css
-
+        driver.findElement(By.cssSelector("h1"));
         //id=>css(#)
         //driver.findElement(By.id("city")
         driver.findElement(By.cssSelector("#city"));
